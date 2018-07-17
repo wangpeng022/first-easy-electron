@@ -119,4 +119,4 @@ const {app, BrowserWindow} = require('electron')
 
 8.如果实在还是有问题下载这个[github上的Demo](https://github.com/wangpeng022/first-easy-electron.git)吧。
 
- Now，愉快的开始electron之旅的
+ Now，愉快的开始electron之旅。
