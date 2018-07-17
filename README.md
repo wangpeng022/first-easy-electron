@@ -37,21 +37,23 @@ your-app/
 ```
 npm install --save-dev electron
 ```
-	这个官方推荐还是本地安装，就想安装vue一样，更能控制electron的版本，因为更新频繁，并且可能不会向下兼容，这个版本问题会是个问题。
+
+这个官方推荐还是本地安装，就像安装vue一样，更能控制electron的版本，因为更新频繁，并且可能不会向下兼容，这个版本问题会是个问题。
 Tips：当然这里推荐使用cnpm、taobao.org 安装，原因你懂的。
+
 5. 创建窗口，在main.js中require各种内置模块:
 
 ```
 const {app, BrowserWindow} = require('electron')
-  
-  function createWindow () {   
+
+  function createWindow () {
     // 创建浏览器窗口
     win = new BrowserWindow({width: 800, height: 600})
-  
+
     // 然后加载应用的 index.html。
     win.loadFile('index.html')
   }
-  
+
   app.on('ready', createWindow)
 ```
 	1) electron.app  负责管理Electron 应用程序的生命周期；
